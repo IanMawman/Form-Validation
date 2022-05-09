@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="validation.js"></script>
+    
+</head>
+<body>
+<form name="userForm" onsubmit= "return validateForm()"  method="post" > <!-- adding the form name and action for when the submit button is clicked-->
+    <h1>Enter your details bellow</h1>
+    <div class="row">
+        <label>Name</label>
+        <input type="text" name="name" placeholder="Enter your Name" > <!-- this is an example of the form rows -->
+        <div class="error" id="errorName"></div>
+    </div>
+    <br> <!-- br to keep items neater-->
+    
+    <div class="row">
+        <label>Email</label>
+        <input type="text" name="email" placeholder="Enter your Email" >
+        <div class="error" id="errorEmail"></div>
+    </div>
+    <br>
+    <div class="row">
+        <label>Credit</label>
+        <input type="text" name="cc" maxlength="16" placeholder="Enter your Credit Card number" > <!--- max length in order to only allow up to 16 numbers -->
+        <div class="error" id="errorCC"></div>
+    </div>
+
+
+    <div class="row"  > 
+        <br>
+        <input type="submit" style="margin:auto;display:block"  value="Submit"> <!-- submit button -->
+    </div>
+</form>
+</body>
+</html>
