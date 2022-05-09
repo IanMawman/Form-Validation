@@ -20,7 +20,7 @@ function printError(elemId, autoMsg) {
         var regex = /^[a-zA-Z\s]+$/;      // using regex to shorten how many characters are needed to put into validate          
         if(regex.test(name) === false) {
             printError("errorName", "Please enter a valid name");
-        } else { // defining each specific error messafe for NAME 
+        } else { // defining each specific error message for NAME 
             printError("errorName", "");
             errorName = false;
         }
